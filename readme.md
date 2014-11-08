@@ -6,6 +6,9 @@ We didn't want to build another system, we wanted to build power tools that you 
 
 Your markup, your layout | Susy's math
 
+## Install
+``meteor add meta:susy``
+
 Resources
 ---------
 - [Github for Susy source code](https://github.com/ericam/susy)
