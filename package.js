@@ -23,7 +23,7 @@ Package.onUse(function(api) {
     "susy/language/susy/_grids.scss",
     "susy/language/susy/_gutters.scss",
     "susy/language/susy/_isolate.scss",
-    "susy/language/susy/_margin.scss",
+    "susy/language/susy/_margins.scss",
     "susy/language/susy/_padding.scss",
     "susy/language/susy/_rows.scss",
     "susy/language/susy/_settings.scss",
@@ -51,7 +51,7 @@ Package.onUse(function(api) {
     "susy/output/shared/_container.scss",
     "susy/output/shared/_direction.scss",
     "susy/output/shared/_inspect.scss",
-    "susy/output/shared/_margin.scss",
+    "susy/output/shared/_margins.scss",
     "susy/output/shared/_output.scss",
     // - Support
     "susy/output/_support.scss",
