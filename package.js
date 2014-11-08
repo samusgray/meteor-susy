@@ -1,7 +1,7 @@
 Package.describe({
   name: 'meta:susy',
   summary: 'Powerful grid tools for the web.',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/aaronagray/meteor-susy'
 });
 
@@ -26,7 +26,7 @@ Package.onUse(function(api) {
     "susy/language/susy/_margin.scss",
     "susy/language/susy/_padding.scss",
     "susy/language/susy/_rows.scss",
-    "susy/language/susy/_settings.scss"
+    "susy/language/susy/_settings.scss",
     "susy/language/susy/_span.scss",
     "susy/language/susy/_validation.scss",
 
@@ -54,7 +54,7 @@ Package.onUse(function(api) {
     "susy/output/shared/_margin.scss",
     "susy/output/shared/_output.scss",
     // - Support
-    "susy/output/_support.scss"
+    "susy/output/_support.scss",
     "susy/output/support/_background.scss",
     "susy/output/support/_box-sizing.scss",
     "susy/output/support/_clearfix.scss",
