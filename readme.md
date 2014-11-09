@@ -8,6 +8,8 @@ Your markup, your layout | Susy's math
 
 ## Install
 ``meteor add meta:susy``
+``gem install compass``
+
 
 Resources
 ---------

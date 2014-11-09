@@ -1,7 +1,7 @@
 Package.describe({
   name: 'meta:susy',
   summary: 'Powerful grids for the web.',
-  version: '1.0.2',
+  version: '1.0.3',
   git: 'https://github.com/aaronagray/meteor-susy'
 });
 
@@ -10,6 +10,17 @@ Package.onUse(function(api) {
   api.use('fourseven:scss@1.0.0');
   api.addFiles([
 
+    // Susy One API
+    "_susyone.scss",
+    "susy/language/susyone/_background.scss",
+    "susy/language/susyone/_functions.scss",
+    "susy/language/susyone/_grid.scss",
+    "susy/language/susyone/_isolation.scss",
+    "susy/language/susyone/_margin.scss",
+    "susy/language/susyone/_media.scss",
+    "susy/language/susyone/_padding.scss",
+    "susy/language/susyone/_settings.scss",
+    
     // Susy API
     "_susy.scss",
     "susy/language/_susy.scss",
