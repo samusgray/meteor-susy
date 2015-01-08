@@ -2,6 +2,7 @@
 // Imports
 
 @import "compass/utilities/general/clearfix";
+@import "compass/css3/box-sizing";
 
 // ---------------------------------------------------------------------------
 // Border-Box Sizing
@@ -10,7 +11,7 @@
 // and adjust the grid math appropriately.
 @mixin border-box-sizing {
   $border-box-sizing: true !global;
-  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  * { @include box-sizing(border-box); }
 }
 
 // ---------------------------------------------------------------------------
@@ -32,6 +33,13 @@
       @if unit($width) == '%' { @include rem(width, $width); }
     } @else {
       @include rem(max-width, $width);
+      @include for-legacy-browser(ie,"6") {
+        @if unit($width) == 'rem' {
+          _width: round(convert-length($width, px));
+        } @else {
+          _width: $width;
+        }
+      }
     }
   }
 }
@@ -121,6 +129,9 @@
   } @else {
     float: $from;
     margin-#{$to}: gutter($context, $style);
+    @include for-legacy-browser(ie, "6") {
+      display: inline;
+    }
   }
 }
 
@@ -137,6 +148,13 @@
 
   float: $omega-float;
   margin-#{$to}: 0;
+
+  @include for-legacy-browser(ie, "6", "7") {
+    *margin-#{$hack}: - $gutter-width;
+    @include for-legacy-browser(ie, "6") {
+      display: inline;
+    }
+  }
 }
 
 // Shortcut to apply omega to a specific subset of elements.
@@ -180,6 +198,13 @@
   float: none;
   width: auto;
   margin-#{$to}: auto;
+
+  @include for-legacy-browser(ie, "6", "7") {
+    *margin-#{$hack}: auto;
+    @include for-legacy-browser(ie, "6") {
+      display: block;
+    }
+  }
 }
 
 // Apply to elements previously set as omega.
@@ -200,6 +225,9 @@
   float: $from;
   margin-#{$to}: gutter($context, $style);
 
+  @include for-legacy-browser(ie, "6", "7") {
+    *margin-#{$hack}: auto;
+  }
 }
 
 // Shortcut to apply remove-omega to a specific subset of elements.

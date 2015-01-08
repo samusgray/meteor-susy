@@ -1,7 +1,7 @@
 Package.describe({
   name: 'meta:susy',
   summary: 'Powerful grids for the web.',
-  version: '1.0.8',
+  version: '1.0.14',
   git: 'https://github.com/aaronagray/meteor-susy'
 });
 
