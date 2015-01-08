@@ -1,7 +1,7 @@
 Package.describe({
   name: 'meta:susy',
   summary: 'Powerful grids for the web.',
-  version: '2.0.0',
+  version: '2.0.2',
   git: 'https://github.com/aaronagray/meteor-susy'
 });
 
@@ -32,6 +32,7 @@ Package.onUse(function(api) {
     "susy/language/susy/_validation.scss",
 
     // Susy Math
+    "susy/_su.scss",
     "susy/su/_grid.scss",
     "susy/su/_settings.scss",
     "susy/su/_utilities.scss",
