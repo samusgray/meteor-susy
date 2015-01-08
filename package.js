@@ -11,18 +11,6 @@ Package.onUse(function(api) {
   api.use('francocatena:compass@0.5.1');
   api.addFiles([
 
-    // Susy One API
-    "susy/language/_susyone.scss",
-    "susy/language/susyone/_background.scss",
-    "susy/language/susyone/_background.scss",
-    "susy/language/susyone/_functions.scss",
-    "susy/language/susyone/_grid.scss",
-    "susy/language/susyone/_isolation.scss",
-    "susy/language/susyone/_margin.scss",
-    "susy/language/susyone/_media.scss",
-    "susy/language/susyone/_padding.scss",
-    "susy/language/susyone/_settings.scss",
-
     // Susy API
     "_susy.scss",
     "susy/language/_susy.scss",
@@ -44,12 +32,10 @@ Package.onUse(function(api) {
     "susy/language/susy/_validation.scss",
 
     // Susy Math
-    "susy/_math.scss",
-    "susy/math/_su.scss",
-    "susy/math/su/_grid.scss",
-    "susy/math/su/_maps.scss",
-    "susy/math/su/_settings.scss",
-    "susy/math/su/_validation.scss",
+    "susy/su/_grid.scss",
+    "susy/su/_settings.scss",
+    "susy/su/_utilities.scss",
+    "susy/su/_validation.scss",
 
     // Susy Output
     // - Float
@@ -66,6 +52,7 @@ Package.onUse(function(api) {
     "susy/output/shared/_inspect.scss",
     "susy/output/shared/_margins.scss",
     "susy/output/shared/_output.scss",
+    "susy/output/shared/_padding.scss",
     // - Support
     "susy/output/_support.scss",
     "susy/output/support/_background.scss",
