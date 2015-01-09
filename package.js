@@ -1,13 +1,13 @@
 Package.describe({
   name: 'meta:susy',
   summary: 'Powerful grids for the web.',
-  version: '2.0.2',
+  version: '2.1.0',
   git: 'https://github.com/aaronagray/meteor-susy'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.use('fourseven:scss@1.0.0');
+  api.use('fourseven:scss@2.0.0-beta');
   api.use('francocatena:compass@0.5.1');
   api.addFiles([
 
