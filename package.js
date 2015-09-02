@@ -61,8 +61,9 @@ Package.onUse(function(api) {
     "susy/output/support/_prefix.scss",
     "susy/output/support/_rem.scss",
     "susy/output/support/_support.scss"
-    ], 'server', {isAsset: true});
-  api.export('Susy');
+    ], 'server', {
+    isAsset: true
+  });
 });
 
 Package.onTest(function(api) {
