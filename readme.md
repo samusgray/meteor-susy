@@ -8,11 +8,11 @@ Your markup, your layout | Susy's math.
 
 ## Install
 
-First, install `fourseven:scss`, then `meta:susy`.
+First install the latest release of `meta:susy`, then install `fourseven:scss`.
+
+```meteor add meta:susy@2.3.3```
 
 ```meteor add fourseven:scss```
-
-```meteor add meta:susy```
 
 ## Import Susy
 
