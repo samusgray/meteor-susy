@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.use('fourseven:scss@3.4.0-beta1');
-  api.addFiles([
+  api.addAssets([
 
     // Susy API
     "_susy.scss",
