@@ -7,16 +7,19 @@ We didn't want to build another system, we wanted to build power tools that you 
 Your markup, your layout | Susy's math.
 
 ## Install
-``meteor add meta:susy``
 
-This will install the `fourseven:scss` package and `meta:susy`.
+First, install `fourseven:scss`, then `meta:susy`.
 
-## Include
+```meteor add fourseven:scss```
 
-Import Susy into a `.scss` file.
+```meteor add meta:susy```
+
+## Import Susy
+
+Import Susy into a `.scss` file:
 
 ```
-@import ".meteor/local/build/programs/server/assets/packages/meta_susy/susy";
+@import "/{meta:susy}/susy";
 ```
 
 Resources
